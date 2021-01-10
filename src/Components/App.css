@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*======================================================
+=================top top top top top ==================*/
+header{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: 1200px;
+  transition: 1s;
+}
+a {
+  color: #000000;
+}
+.logo-and-brandname{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 2%;
+  height: 75px;
+  box-shadow: 0 0 2px 0 black;
+  
+
+
+}
+.a-box-of-logo-nd-menu-ls{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.a-box-of-logo-nd-menu-ls ul{
+display: flex;
+align-items: center;
+}
+.a-box-of-logo-nd-menu-ls ul:nth-child(2){
+width: 70%;
+justify-content: space-between;
+font-weight: 700;
+font-family: 'Roboto', sans-serif;
+font-size: 1.1rem;
+align-items: flex-start;
+}
+
+.a-box-of-logo-nd-menu-ls ul:nth-child(1) li{
+  font-family: 'Redressed', cursive;
+  font-size: 27px;
+  font-weight: 500;
+}
+.a-box-of-logo-nd-menu-ls ul:nth-child(2) li {
+
+  transition: 1s;
+
+}
+.a-box-of-logo-nd-menu-ls ul:nth-child(2) li a:hover {
+color:rgb(243, 156, 18) ;
+
+}
+.fa-chevron-down{
+  font-size: 10px;
+}
+
+.a-box-of-logo-nd-menu-ls ul:nth-child(2) li a:hover .fa-chevron-down{
+   transform: rotateZ(-90deg);
+}
+
+.a-box-of-logo-nd-menu-ls ul:nth-child(2) li ul{
+
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ width: 150px;
+ margin-top: 2px;
+ line-height: 2rem;
+ font-size: 1rem;
+ font-weight: 300;
+ justify-content: flex-start;
+  align-items: flex-start;
+  border:.5px solid rgb(243, 156, 18);
+  background-color: white;
+
+}
+.a-box-of-logo-nd-menu-ls ul:nth-child(2) li ul li{
+
+  padding-left: 10%;
+
+}
+.a-box-of-logo-nd-menu-ls ul:nth-child(2) li:hover ul{
+display: flex;
+transition: 9s;
+
+}
+.b-box-of-live-go{
+  width: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.toggle-btn {
+
+  flex-direction: column;
+  cursor: pointer;
+  display: none;
+  left: 10px;
+  top: 10px;
+  width: 30px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+}
+.toggle-btn span {
+  width: 1.4rem;
+  height: 0.2rem;
+  background-color: black;
+  margin: 0.1rem 0;
+  display: block;
+  border-radius: 5px;
+}
+
+
+.b-box-of-live-go ul{
+width: 60%;
+}
+.b-box-of-live-go ul li a{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+#dropdown{
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  max-width: 1200px;
+  padding: 0 25px;
+padding-top: 30px;
+display: none;
+}
+#dropdown ul {
+  width: 100%;
+}
+
+.media-screen-1000px-show ul{
+display: flex;
+flex-direction: column;
+font-size: 1.5rem;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+
+}
+.media-screen-1000px-show ul li a{
+  color: rgba(0, 0, 0, .6);
+  line-height: 3rem;
+}
+#sidesubbar {
+  display: none;
+  margin: 0 0;
+  background-color: rgba(255, 255, 255, .8);
+}
+#sidesubbar1 {
+  display: none;
+  margin: 0 0;
+}
+#sidesubbar.show {
+  display: flex;
+  flex-direction: column;
+}
+#sidesubbar1.show {
+  display: flex;
+  flex-direction: column;
+}
+.media-screen-1000px-show  ul li a i {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width:1000px){
+.a-box-of-logo-nd-menu-ls ul:nth-child(2){
+display: none;
+}
+.toggle-btn {
+display: flex;
+}
+.b-box-of-live-go{
+width: 150px;
+}
+#dropdown.active{
+  display: flex;
+  transition: .5s;
+}
+#dropdown.active .toggle-btn {
+  border-radius: 50%;
+}
+#dropdown.active .toggle-btn span:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  margin: 0;
+  width: 20px;
+}
+#dropdown.active .toggle-btn span:nth-child(2) {
+  transform: rotate(135deg);
+  position: absolute;
+  margin: 0;
+  width: 20px;
+}
+#dropdown.active .toggle-btn span:nth-child(3) {
+  position: absolute;
+  display: none;
+  margin: 0;
+}
+}
+header.sticky {
+ position: fixed;
+ top: 0;
+ width: 100%;
+ max-width: 1200px;
+ background-color: white;
+ padding: 0 0;
+ box-shadow: 0 0 5px 0 black;
+
+}
+
+#dropdown ul li a:hover{
+color:  rgb(243, 156, 18);
+}
+#dropdown ul li ul{
+  background-color: rgb(221, 221, 221);
+  width: 100%;
+  font-size: 18px;
+}
+#dropdown ul li ul li{
+  padding-left: 2%;
+}
+/*==============================================
+========================Footer Footer==============================
+============================================================*/
+.footer-full-screen{
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.footer-box-full-on{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 10px ;
+  width: 100%;
+  align-items: center;
+  max-width: 1200px;
+
+}
+.footer-box-full-on a{
+  color: white;
+}
+.menu-box-all-new{
+  width: 70%;
+
+}
+.bog-box-footer-box{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+
+}
+.bog-box-footer-box ul li{
+  font-family: 'Roboto', sans-serif;
+  width: 167px;
+  font-size: .9rem;
+  line-height: 1rem;
+
+}
+.bog-box-footer-box ul li:nth-child(1){
+font-size: 1.2rem;
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+line-height: 4rem;
+}
+.socal-media-logo-policy-andall{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.socalmesia ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.socalmesia ul{
+  font-size: 1.5rem;
+
+}
+.socalmesia ul:nth-child(1
+){
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.logo-bran{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gg1000px-mobile-view-footer {
+  display: none;
+  flex-direction: column;
+
+}
+.gg1000px-mobile-view-footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+    padding-left: 5%;
+    padding-top: 40px;
+
+}
+
+.gg1000px-mobile-view-footer ul li ul{
+  flex-direction: column;
+  padding-left: 2%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+
+}
+#sidesubbar4{
+  display: none;
+}
+#sidesubbar5{
+  display: none;
+}
+#sidesubbar6{
+  display: none;
+}
+#sidesubbar7{
+  display: none;
+}
+#sidesubbar4.show{
+  display: flex;
+  width: 200px;
+}
+#sidesubbar5.show{
+  display: flex;
+  width: 200px;
+}
+#sidesubbar6.show{
+  display: flex;
+  width: 200px;
+}
+#sidesubbar7.show{
+  display: flex;
+  width: 200px;
+}
+
+@media screen and (max-width:988px){
+  .bog-box-footer-box{
+    display: none;
+  }
+  .menu-box-all-new{
+    width: 100%;
+  }
+
+  .footer-box-full-on{
+    flex-direction: column;
+  }
+.gg1000px-mobile-view-footer {
+  display: flex;
+}
+.socal-media-logo-policy-andall{
+width: 100%;
+padding-top: 30px;
+}
+.socalmesia ul:nth-child(1){
+  display: flex;
+  justify-content: center;
+}
+} 

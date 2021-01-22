@@ -11,6 +11,7 @@ header{
   width: 100%;
   max-width: 1200px;
   transition: 1s;
+  background-color: white;
 }
 a {
   color: #000000;
@@ -22,7 +23,7 @@ a {
   align-items: center;
   padding:0 2%;
   height: 75px;
-  box-shadow: 0 0 2px 0 black;
+  
   
 
 
@@ -388,3 +389,109 @@ padding-top: 30px;
   justify-content: center;
 }
 } 
+/*=========================================
+======home edit =========================*/
+.bog-box-rg-lg{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+
+}
+.undex-box-lg{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  align-items: center;
+
+}
+.live-niws-liv-news-on{
+  width: 100%;
+}
+.live-niws-liv-news-on img{
+  width: 100%;
+}
+.live-articl-santance{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.live-articl-santance span:nth-child(1){
+  font-size: 2.2rem;
+  padding: 10px 0px 5px 0;
+}
+.live-articl-santance span:nth-child(2){
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+
+
+}
+.live-articl-santance span:nth-child(2) a{
+color: gray;
+width: 100%;
+
+}
+
+
+
+/*====================================
+        Map Img
+===============================*/
+.map-out-box-big{
+  width: 100%;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.padding-box-of-map{
+  width: 90%;
+
+}
+.map-img1{
+  position: relative;
+  left: 0;
+  width: auto;
+
+}
+.map-img1 img{
+  width: 380.74px;
+  height: 480px;
+ 
+}
+.map-img2{
+  position: relative;
+  top: -260px;
+  left: 185px;
+  width: auto;
+}
+.map-img2 img{
+  width: 358.01px;
+  height: 380px;
+
+}
+.map-img3{
+  position: relative;
+  left: 117px;
+  top:-345px;
+  width: auto;
+}
+.map-img3 img{
+  width: 400px;
+  height: 294.53px;
+  
+}
+.map-img4{
+  position: relative;
+  left: 358px;
+  top:-910px;
+  width: auto;
+}
+.map-img4 img{
+  width: 524.12px;
+  height: 600px;
+  
+}

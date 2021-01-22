@@ -18,7 +18,7 @@ const Footer = () => {
         h2="Connect"
         h21="Contact Us"
         h22="Apps"
-        h2=""
+        
       />
     </>
   );
